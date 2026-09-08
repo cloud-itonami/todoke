@@ -13,7 +13,7 @@
   of the state-machine port (mirrors how shionome's .cljc test covers only the
   transitions). The handoff_proof cases are a sibling cell, out of scope here."
   (:require [clojure.test :refer [deftest is testing run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [todoke.cells.route-sequencing.state-machine :as sm]))
 
 ;; A scrambled set of collinear stops: optimal open path = ascending x.

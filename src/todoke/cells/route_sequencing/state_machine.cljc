@@ -17,7 +17,7 @@
     - RoutePhase enum value identities (\"init\"/…/\"route_emitted\") stay strings
     - transitions are pure fns; the EnvelopeViolation is an ex-info with `:envelope-violation`
       true, exactly as `todoke.methods.last-mile/envelope-violation` produces."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [todoke.methods.last-mile :as last-mile]))
 
 ;; ── RoutePhase (enum — Python value identities preserved) ────────
@@ -81,7 +81,7 @@
           {:id   (int (:id s))
            :x    (double (:x s))
            :y    (double (:y s))
-           :zone (str/lower-case (str (:zone s)))})
+           :zone (str/lower (str (:zone s)))})
         raw))
 
 (defn- plan
