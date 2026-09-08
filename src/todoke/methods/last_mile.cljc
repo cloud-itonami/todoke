@@ -20,7 +20,7 @@
     a thrown ex-info with `:envelope-violation` true, mirroring the Python `EnvelopeViolation`.
 
   Pure Clojure (clojure.core + Math only), no external deps. Portable .cljc."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:const sae-level-ceiling 4) ; N2: Level 5 is a non-goal
 

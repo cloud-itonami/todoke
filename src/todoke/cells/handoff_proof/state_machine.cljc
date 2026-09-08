@@ -13,7 +13,7 @@
   Pure, unit-tested transitions; the cell's .solve() raises until Council activation.
   Conventions: dataclass HandoffState → a plain map with the SAME string field keys the Python
   `cs.__dict__` round-trips; phase enum value identities stay strings; ValueError → ex-info."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; G8: the ONLY admissible proof kinds. Cloud/biometric kinds are unrepresentable → refused.
 (def admissible-proof-kinds #{"recipient-signature" "locker-code" "on-device-photo-hash"})
