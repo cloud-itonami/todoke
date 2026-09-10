@@ -32,8 +32,8 @@ A pure, zero-dependency, deterministic Rust crate (`cargo test` in `route/`, **1
   4.2 m/s), enter a vehicular road (outside the ODD, N2), or assume SAE level > 4 (N2). The
   charter is enforced by construction — no caller can obtain an unsafe route.
 
-A faithful Python mirror lives in `src/todoke/methods/last_mile.cljc` (one model, two runtimes — the sumitsubo
-pattern, ADR-2606033600); `test/todoke/methods/test_last_mile.cljc` pins the two implementations to the same
+A faithful Python mirror lives in `src/todoke/methods/last_mile.kotoba` (one model, two runtimes — the sumitsubo
+pattern, ADR-2606033600); `test/todoke/methods/test_last_mile.kotoba` pins the two implementations to the same
 visiting order `[0, 4, 2, 3, 1]` on the shared fixture.
 
 ## 5 Pregel Cells
