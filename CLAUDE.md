@@ -26,7 +26,7 @@ The two constitutionally-load-bearing cells are **fully coded + tested** at R0:
 Pure, zero-dep, deterministic. The repo has **no root Cargo workspace**, so this is a standalone
 leaf crate: `cd route && cargo test` (7 tests). It owns ONLY the last-mile-specific math:
 stop sequencing (NN + 2-opt) and the SAE-L4 sidewalk ODD safety envelope. Everything else
-(perception/planning/control) delegates to kami-autodrive. `src/todoke/methods/last_mile.cljc` is the
+(perception/planning/control) delegates to kami-autodrive. `src/todoke/methods/last_mile.kotoba` is the
 parity-tested Python mirror — keep the two in lockstep (per-zone caps, NN/2-opt order, refusals).
 
 ## Constitutional invariants (encoded in 3 places: schema + lexicon `const` + code)
