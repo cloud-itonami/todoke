@@ -1,4 +1,4 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; LIVE cross-language py↔clj parity for the todoke last-mile route core.
 (ns todoke.methods.test-last-mile-parity
   "test_last_mile_parity.clj — todoke last_mile py↔clj LIVE parity (ADR-2606042300).
@@ -11,7 +11,7 @@
 
   Gracefully SKIPS if python3 is unavailable (red only on a genuine py↔clj divergence).
 
-  Run: bb test/todoke/methods/test_last_mile_parity.clj"
+  Run: kbb test/todoke/methods/test_last_mile_parity.cljk"
   (:require [todoke.methods.last-mile :as lm]
             [clojure.java.shell :refer [sh]]
             [cheshire.core :as json]
