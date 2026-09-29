@@ -1,4 +1,4 @@
-# . — CLAUDE.md
+# . — AGENTS.md
 
 ## Identity
 - **Name**: todoke (届け — "to deliver / to reach the destination")
